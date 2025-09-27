@@ -9,12 +9,13 @@
     --vermelho: #BA1D0A;
     --fonte: "IBM Plex Sans";
     --cor-input: #282828;
+    --cor-olho: #615f5f;
 }
-
 
 *{
     margin: 0;
-    padding: 0;    
+    padding: 0;  
+    overflow-x: hidden;  
 }
 
 body{
@@ -33,6 +34,7 @@ main{
    border: 2px solid var(--vermelho);
    padding: 60px;
    font-family: var(--fonte);
+   overflow-y: hidden;
 }
 
 main h1{
@@ -54,6 +56,7 @@ main img{
 
 form{
     margin-top: 40px;
+
 }
 
 .input input{
@@ -67,8 +70,100 @@ form{
 .input input::placeholder{
     padding: 25px;
 }
-
-#olhoID{
-    position: absolute;
-    right: ;
+#password{
+    background-color:var(--cor-input
+    ) ;
+    max-width: 394px;
+    height: 55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
+
+
+#password input{
+    background-color: transparent;
+    width: 350px;
+    height: 25px;
+    margin-bottom: 10px;
+    
+}
+
+#password button{
+ height: 30px;
+ width: 30px;
+ background-color: transparent;
+ border: none;
+ margin-right: 10px ;
+}
+
+#password button i{
+    color: var(--cor-olho);
+}
+
+#login{
+    width: 394px;
+    height: 67px;
+    font-family: var(--fonte);
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--vermelho);
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+#help{
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-size: 13px;
+    max-width: 394px;
+}
+
+#conectado{
+    display: flex;
+    justify-content: space-between;
+}
+
+#conectado input{
+    margin-right: 20px;
+}
+
+fieldset{
+    border: none;
+    border-top:  1px solid rgba(255, 255, 255, .185);
+    text-align: center;
+    margin-top: 30px;
+    padding: 20px 0px;
+}
+
+fieldset legend{
+    padding: 0px 20px;
+    text-transform: uppercase;
+}
+
+fieldset button{
+    background-color: transparent;
+    border: 1px solid rgba(255, 255, 255, .185);
+    color: var(--cor-olho);
+    height: 41px;
+    width: 110px;
+    margin: 0px 10px;
+}
+
+#cadastro{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+#cadastro a{
+    padding: 0px 0px 0px 5px;
+    text-decoration: underline;
+    color: var(--vermelho);
+    text-transform: uppercase;
+
+}
+

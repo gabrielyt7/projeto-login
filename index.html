@@ -6,9 +6,9 @@
     <title>PAgina de Logint</title>
     <link rel="shortcut icon" href="assets/images/Favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-</head>
-<body>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <body>
+    
     <main>
         <img src="assets/images/logo.png" alt="logo">
         <h1>ENTRE NA SUA CONTA</h1>
@@ -22,15 +22,38 @@
 
                 <div class="input" id="olhoID">
                     <label for="senhaID">SENHA</label> <br>
-                    <input type="password" id="senhaID" placeholder=" DIGITE SUA SENHA ">
-                    <button><i class="fas fa-eye"></i></button>
+                    <div id="password">
+                        <input type="password" id="senhaID" placeholder=" DIGITE SUA SENHA ">
+                        <button type="button" onclick="trocarBotao()"><i class="fa-solid fa-eye-slash" id="botaoID"></i></button>
+                    </div>
                 </div> <br>
+                <input type="submit" value="Fazer Login" id="login">
 
+                <div id="help">
+                    <div id="conectado">
+                            <input type="checkbox" id="checkboxID">
+                        
+                        <p>continuar conectado</p>
+                    </div>
+                    <p>esqueci minha senha</p>
+                </div>
+                <fieldset>
+                    <legend>Outros métodos de login</legend>
+                    <button><i class="fa-brands fa-google"></i></button>
+                    <button><i class="fa-brands fa-facebook"></i></button>
+                    <button><i class="fa-brands fa-linkedin"></i></button>
+                </fieldset>
+                <p id="cadastro">Ainda não tem cadastro? <a href="#"> Crie uma conta</a></p>
             </form>
-            <div>
-
-
-            </div>
         </div>
+
     </main>
+
+
+
+
+
+    
+    </body>
+    <script src="assets/scripts/script.js"></script>
 </html>
