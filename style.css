@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+
+:root{
+    --preto: #101010; 
+    --preto-login: #171717;
+    --vermelho: #BA1D0A;
+    --fonte: "IBM Plex Sans";
+    --cor-input: #282828;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;    
+}
+
+body{
+    background-color: var(--preto);
+    height: 100vh;
+    border-bottom: 2px solid var(--vermelho);
+    width: 100vw;
+     display: flex;
+    justify-content: center;
+    color: white;
+    font-family: var(--fonte);
+}
+
+main{
+    background-color: var(--preto-login);
+   border: 2px solid var(--vermelho);
+   padding: 60px;
+   font-family: var(--fonte);
+}
+
+main h1{
+    font-family: var(--fonte);
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+main img{
+    width: 394px;
+    margin-bottom: 30px; 
+
+}
+
+.input{
+    font-size: 15px;
+}
+
+form{
+    margin-top: 40px;
+}
+
+.input input{
+    margin-top: 6px;
+    width: 394px;
+    height: 55px;
+    background-color: var(--cor-input);
+    border-style: none;
+}
+
+.input input::placeholder{
+    padding: 25px;
+}
+
+#olhoID{
+    position: absolute;
+    right: ;
+}
